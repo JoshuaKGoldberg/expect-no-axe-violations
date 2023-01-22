@@ -28,6 +28,8 @@
 
 ## Usage
 
+This package works for any testing setup that uses [`expect`](https://www.npmjs.com/package/expect), including [Jest](https://jestjs.io) and [Playwright](https://playwright.dev).
+
 ```shell
 npm i expect-no-axe-violations --save-dev
 ```
@@ -38,13 +40,19 @@ import { toHaveNoAxeViolations } from "expect-no-axe-violations";
 expect.extend(toHaveNoAxeViolations);
 ```
 
-This package works for any testing setup that uses [`expect`](https://www.npmjs.com/package/expect), including [Jest](https://jestjs.io) and [Playwright](https://playwright.dev).
+You'll now be able to use a `.toHaveNoAxeViolations()` matcher on any value that contains a `.violations` property, such as the result of calling `axe()`:
+
+```ts
+const results = await axe(/* ... */);
+
+expect(results).toHaveNoAxeViolations();
+```
 
 > ⚠️ **This package does not run aXe on its own.**
 > It _only_ provides a matcher to ensure there are no violations in aXe results.
 > See the excellent [NickColley/jest-axe](https://github.com/NickColley/jest-axe) for a package that does run aXe.
 
-### Usage with Jest
+### Setup with Jest
 
 Instead of calling `expect.extend` yourself, you can add `expect-no-axe-violations/extend-expect.js` to [`setupFilesAfterEnv`](https://jestjs.io/docs/configuration#setupfilesafterenv-array) to have `extend` extended for you:
 
@@ -55,7 +63,9 @@ module.exports {
 };
 ```
 
-### Usage with Playwright
+### Setup with Playwright
+
+Use Playwright's [`globalSetup`](https://playwright.dev/docs/test-advanced#global-setup-and-teardown) option:
 
 ```ts
 // global-setup.ts
