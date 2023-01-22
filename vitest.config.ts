@@ -1,6 +1,7 @@
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
+	envPrefix: "FORCE_",
 	test: {
 		clearMocks: true,
 		coverage: {
