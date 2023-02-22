@@ -17,7 +17,7 @@ specifiers:
   eslint-plugin-regexp: ^1.12.0
   eslint-plugin-simple-import-sort: ^10.0.0
   eslint-plugin-typescript-sort-keys: ^2.1.0
-  eslint-plugin-vitest: ^0.0.42
+  eslint-plugin-vitest: ^0.0.44
   husky: ^8.0.3
   jest-matcher-utils: ^29.3.1
   jsonc-eslint-parser: ^2.1.0
@@ -55,7 +55,7 @@ devDependencies:
   eslint-plugin-regexp: 1.12.0_eslint@8.32.0
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.32.0
   eslint-plugin-typescript-sort-keys: 2.1.0_caon6io6stgpr7lz2rtbhekxqy
-  eslint-plugin-vitest: 0.0.42_7uibuqfxkfaozanbtbziikiqje
+  eslint-plugin-vitest: 0.0.44_7uibuqfxkfaozanbtbziikiqje
   husky: 8.0.3
   jsonc-eslint-parser: 2.1.0
   knip: 1.12.3
@@ -3280,8 +3280,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vitest/0.0.42_7uibuqfxkfaozanbtbziikiqje:
-    resolution: {integrity: sha512-6QsUlg3/YEVnNFrNZV5e2p63TNItUcv1mQewI5RkMIRCJ/3VzZg2LCEpuA5ehfO+M03Zgy2SLnOEwGKA3liG3Q==}
+  /eslint-plugin-vitest/0.0.44_7uibuqfxkfaozanbtbziikiqje:
+    resolution: {integrity: sha512-hHPnOUAT+Y+3zTcAzkHL+S4/6ZqrH9cMdLXm3ixEUljWWxH9G+xC21uncaJ4b6o1VvA9ApTqJEsXVVBtkFmWyQ==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
       eslint: '>=8.0.0'
