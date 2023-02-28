@@ -47,7 +47,7 @@
 	},
 	"main": "./lib/index.js",
 	"name": "expect-no-axe-violations",
-	"packageManager": "pnpm@7.27.1",
+	"packageManager": "pnpm@7.28.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/JoshuaKGoldberg/expect-no-axe-violations"
